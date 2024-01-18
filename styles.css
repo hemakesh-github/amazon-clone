@@ -3,14 +3,20 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
 }
-
+a {
+    text-decoration: none;
+    color: #007185;
+   
+}
 .navbar {
     height: 60px;
     background-color: #131921;
     color: white;
     display: flex;
     justify-content: space-evenly;
+    
 
 }
 /* logo */
@@ -49,23 +55,25 @@
     color: white;
     padding-top: 0px;
     padding-bottom: 0px;
-    /* margin: 5px 2px 5px 0px; */
-
+    padding-top: 3px;
+    align-items: center;
 }
 
 .add-first{
-    font-size: 1rem;
+    font-size: 12px;
     margin-left: 16.47px;
+    font-weight: lighter;
 }
 
 .add-second{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 600;
     margin-left: 4.5px;
 }
 
 .add-icon{
     display: flex;
+    font-size: 15px;
 }
 
 /* search */
@@ -74,10 +82,9 @@
     display: flex;
     width: 620px;
     height: 40px;
-    
     justify-content: space-evenly;
     border-radius: 4px;
-    margin: 9px 4px 10px 3px;
+    margin: 10px 4px 10px 3px;
 }
 
 .search-select{
@@ -87,11 +94,10 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border: none;
-
 }
 
 .search-input{
-    width: 522px;
+    width: 722px;
     border: none;
     font-size: 1rem;
 }
@@ -111,6 +117,7 @@
 
 .nav-search{
     border: 2px solid transparent;
+    width: 820px;
 }
 
 .nav-search:hover{
@@ -120,11 +127,11 @@
 /*accounts*/
 
 span {
-    font-size: 0.7rem
+    font-size: 0.9rem
 }
 
 .nav-second {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -134,7 +141,7 @@ span {
 }
 
 .nav-cart{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -149,4 +156,177 @@ img{
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 700;
+}
+
+.nav-main{
+    background-color: #232f3e;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    padding-left: 11px;
+    display: flex;
+    align-items: center;
+    font: 14px;
+}
+
+.main {
+    border: 1px solid transparent;
+}
+
+.main:hover{
+    border: 1px solid white;
+}
+
+.ham {
+    font-size: 20px;
+}
+
+.nav-hamburger{
+    width: 60px;
+    height: 40px;
+    padding: 9px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-hamburger span{
+    text-align: center;
+    margin-left: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-a{
+    padding: 8px 9px;
+}
+
+/* hero section */
+.hero-section {
+    flex-direction: column;
+    background :linear-gradient(to bottom, transparent, #eaeded 70vh),url(images/mainBanner.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    background-color: aliceblue;
+    color: #131921;
+    height: 40px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    margin-top: 250px;
+}
+
+/* shop section */
+.shop-section{
+    display: flex;
+    padding: 20px 0px;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    height: 450px;
+    width: 335px;
+    background-color: white;
+    padding: 20px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.box-img {
+    height: 300px;
+    width: 300px;
+    padding: 0px 20px;
+    align-self: center; 
+    
+}
+
+.four-box-img{
+    width: 185px;
+    height: 115px;
+  
+}
+
+.row{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.desc{
+    display: flex;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #0f1111;
+}
+
+img{
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.desc1 {
+    position: relative;
+    width: 132px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #0f1111
+}
+
+.desc2{
+    position: relative;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #0f1111
+   
+}
+
+.single-box-img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    align-self: center; 
+}
+
+.shop,h2{
+    padding: 0px 35px;
+    font-size: 21px;
+}
+
+.shop {
+    color: #007185;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding-top: 2px;
+}
+
+.extra{
+    display: none;
+}
+
+@media (min-width: 970px) and (max-width: 1300px) {
+    .box{
+        width:340;
+    }
+    .extra{
+        display: flex;
+    }
 }
